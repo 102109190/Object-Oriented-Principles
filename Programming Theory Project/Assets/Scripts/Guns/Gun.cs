@@ -35,5 +35,5 @@ public abstract class Gun : MonoBehaviour
         }
     }
     protected virtual IEnumerator FireGun() {yield return new WaitForSeconds(0);}
-    protected virtual void ReloadGun() { ammoCount = maxAmmoCapacity; }
+    protected virtual void ReloadGun() { ammoCount = maxAmmoCapacity; } //ABSTRACTION
 }

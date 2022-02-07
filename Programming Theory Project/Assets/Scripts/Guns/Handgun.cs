@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Handgun : Gun
+public class Handgun : Gun //INHERITANCE
 {
     void Start()
     {
@@ -10,7 +10,7 @@ public class Handgun : Gun
         ammoCount = maxAmmoCapacity;
     }
 
-    protected override IEnumerator FireGun()
+    protected override IEnumerator FireGun() //POLYMORPHISM
     {
         isFiring = true;
 
