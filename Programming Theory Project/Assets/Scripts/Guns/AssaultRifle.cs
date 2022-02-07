@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Handgun : Gun
+public class AssaultRifle : Gun
 {
     // Start is called before the first frame update
-    protected override void Start()
+    void Start()
     {
-        maxAmmoCapacity = 12;
+        maxAmmoCapacity = 30;
         ammoCount = maxAmmoCapacity;
-        base.Start();
     }
 
     protected override IEnumerator FireGun()

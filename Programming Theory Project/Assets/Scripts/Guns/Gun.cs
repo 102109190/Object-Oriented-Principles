@@ -7,17 +7,12 @@ public abstract class Gun : MonoBehaviour
 {
     public Text ammoCountDisplay;
 
-    public int maxAmmoCapacity;
-    public int ammoCount;
+    protected int maxAmmoCapacity;
+    protected int ammoCount;
 
     public float fireRate;
 
     protected bool isFiring = false;
-
-    protected virtual void Start()
-    {
-        ammoCountDisplay.text = ammoCount.ToString();
-    }
 
     protected void Update()
     {
@@ -31,7 +26,7 @@ public abstract class Gun : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonDown("Fire1") && !isFiring)
+        if (Input.GetButton("Fire1") && !isFiring)
         {
             if (ammoCount > 0)
                 StartCoroutine(FireGun());

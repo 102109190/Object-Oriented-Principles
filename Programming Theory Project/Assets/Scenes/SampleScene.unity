@@ -123,6 +123,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &60949047 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1829597508155286, guid: 7359baf27e84aa44cafac3788c8be0f1, type: 3}
+  m_PrefabInstance: {fileID: 1674792397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &60949048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60949047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b615f89f28b6a438964cbc307c5c60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoCountDisplay: {fileID: 1985548868}
+  fireRate: 1
 --- !u!1001 &73766722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -192,6 +211,7 @@ GameObject:
   - component: {fileID: 116134582}
   - component: {fileID: 116134581}
   - component: {fileID: 116134580}
+  - component: {fileID: 116134584}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -280,6 +300,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &116134584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116134579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4036979b5fd5c6d44b271ece1f1ca2bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons:
+  - {fileID: 1634760085}
+  - {fileID: 1116868665}
+  - {fileID: 60949047}
 --- !u!1001 &247524074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -681,6 +717,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048199812}
   m_CullTransparentMesh: 1
+--- !u!1 &1116868665 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1487774384131766, guid: ee329c3cd08e58645834d20702d7f6c6, type: 3}
+  m_PrefabInstance: {fileID: 247524074}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1116868666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116868665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54147a4bd6c620d4cb43483a2ba62789, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoCountDisplay: {fileID: 1985548868}
+  fireRate: 0.1
 --- !u!1001 &1634760083
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -777,8 +832,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammoCountDisplay: {fileID: 1985548868}
-  maxAmmoCapacity: 12
-  ammoCount: 12
   fireRate: 0.5
 --- !u!1001 &1674792397
 PrefabInstance:
