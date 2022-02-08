@@ -212,6 +212,7 @@ GameObject:
   - component: {fileID: 116134581}
   - component: {fileID: 116134580}
   - component: {fileID: 116134584}
+  - component: {fileID: 116134585}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -310,6 +311,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4036979b5fd5c6d44b271ece1f1ca2bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapInv: {fileID: 116134585}
+--- !u!114 &116134585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116134579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1abc610a6f93434c8831164d289138e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   weapons:

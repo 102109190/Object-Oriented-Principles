@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WeaponSwitching : MonoBehaviour
 {
-    public List<GameObject> weapons = new List<GameObject>();
+    public WeaponInventory weapInv;
 
     private void Update()
     {
@@ -24,15 +24,15 @@ public class WeaponSwitching : MonoBehaviour
 
     private void SwitchWeapon(int weaponSlot)
     {
-        for (int i = 0; i < weapons.Count; i++)
+        for (int i = 0; i < weapInv.Weapons.Count; i++)
         {
             if (i == weaponSlot)
             {
-                weapons[i].SetActive(true);
+                weapInv.Weapons[i].SetActive(true);
             }
             else
             {
-                weapons[i].SetActive(false);
+                weapInv.Weapons[i].SetActive(false);
             }
         }
     }

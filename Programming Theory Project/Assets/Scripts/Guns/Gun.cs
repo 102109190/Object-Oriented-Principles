@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public abstract class Gun : MonoBehaviour
+public abstract class Gun : MonoBehaviour //ABSTRACTION
 {
     public Text ammoCountDisplay;
 
@@ -35,5 +35,5 @@ public abstract class Gun : MonoBehaviour
         }
     }
     protected virtual IEnumerator FireGun() {yield return new WaitForSeconds(0);}
-    protected virtual void ReloadGun() { ammoCount = maxAmmoCapacity; } //ABSTRACTION
+    protected virtual void ReloadGun() { ammoCount = maxAmmoCapacity; }
 }
